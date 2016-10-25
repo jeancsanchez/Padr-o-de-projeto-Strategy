@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.topracha.jeancsanchez.strategyexample.MainActivity">
+
+    <RadioButton
+        android:text="Black Duck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdBtnBlackDuck"
+        android:onClick="onBlackDuckSelected"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/rdBtnWhiteDuck"
+        android:layout_alignLeft="@+id/rdBtnWhiteDuck"
+        android:layout_alignStart="@+id/rdBtnWhiteDuck" />
+
+    <Button
+        android:text="Quack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnQuack"
+        android:onClick="onQuack"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_below="@+id/rdBtnBlackDuck"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="122dp" />
+
+    <Button
+        android:text="Fly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onFly"
+        android:id="@+id/btnFly"
+        android:layout_alignBaseline="@+id/btnQuack"
+        android:layout_alignBottom="@+id/btnQuack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp" />
+
+    <RadioButton
+        android:text="Plastic Duck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdBtnPlasticDuck"
+        android:onClick="onPlasticDuckSelected"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <RadioButton
+        android:text="White Duck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:onClick="onWhiteDuckSelected"
+        android:id="@+id/rdBtnWhiteDuck"
+        android:layout_below="@+id/rdBtnPlasticDuck"
+        android:layout_alignLeft="@+id/rdBtnPlasticDuck"
+        android:layout_alignStart="@+id/rdBtnPlasticDuck" />
+</RelativeLayout>
